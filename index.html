@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1785542ef7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="./src/Images/Preston-designstyle-cartoon-l.png"
+            alt="logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <!---------about---------->
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="./src/Images/preston.jpeg" alt=".icon" />
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <h4>Hi, I'm Preston!</h4>
+                <br />
+                <p>
+                  I'm a front-end web developer currently learning fullstack web
+                  development.
+                </p>
+                <br />
+                <p>
+                  I'm persuaded that obsession is the code for mastery in any
+                  sphere of excellence. I am an obsessed learner!
+                </p>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="opentab('experience')">
+                    Experience
+                  </p>
+                  <p class="tab-links" onclick="opentab('education')">
+                    Education
+                  </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li>
+                      <span>Web Development</span><br />Designing Web/App
+                      interfaces
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li>
+                      <span>2022 - Current </span><br />Software Engineering at
+                      Moringa School
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li>
+                      <span>2022 - Current </span><br />Software Engineering at
+                      Moringa School
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- --------------projects------------- -->
+        <div id="projects">
+          <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+              <div>
+                <h2>Chuck Norris API</h2>
+                <img
+                  src="./src/Images/chucknorris_logo_coloured_small@2x.png"
+                  alt=".icon"
+                />
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Iusto ad aperiam est aliquid, similique fuga eveniet
+                  temporibus repellat molestiae animi aut, eos consectetur id
+                  reiciendis necessitatibus voluptate. Repudiandae,
+                  reprehenderit officia!
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-brands fa-bootstrap"></i>
+                <h2>Bootstrap</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Iusto ad aperiam est aliquid, similique fuga eveniet
+                  temporibus repellat molestiae animi aut, eos consectetur id
+                  reiciendis necessitatibus voluptate. Repudiandae,
+                  reprehenderit officia!
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-brands fa-react"></i>
+                <h2>React</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Iusto ad aperiam est aliquid, similique fuga eveniet
+                  temporibus repellat molestiae animi aut, eos consectetur id
+                  reiciendis necessitatibus voluptate. Repudiandae,
+                  reprehenderit officia!
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">Back to Top</a>
+        </div>
+        <!-- -----------------contact-------------------------- -->
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>
+                  <i class="fa-solid fa-paper-plane"></i
+                  >prestonosoro56@gmail.com
+                </p>
+                <p>
+                  <i class="fa-sharp fa-solid fa-square-phone"></i>+254712 015
+                  192
+                </p>
+                <div class="social-icons">
+                  <a href="https://twitter.com/PrestonOsoro"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="https://www.linkedin.com/in/preston-osoro-520a4a157/"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a href="https://github.com/preston-56"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="https://web.whatsapp.com/"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                </div>
+                <a
+                  href="./src/Images/Eloquent Javascript A Modern Introduction to Programming (Marijn Haverbeke) (z-lib.org).pdf"
+                  download
+                  class="btn btn2"
+                  >Download Resume</a
+                >
+              </div>
+
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <textarea
+                    name="Message"
+                    rows="6"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>
+              Copyright © Preston. Made with
+              <i class="fas fa-solid fa-heart"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
