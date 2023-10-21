@@ -8,7 +8,7 @@ function opentab(tabname) {
   for (tabcontent of tabcontents) {
     tabcontent.classList.remove("active-tab");
   }
-  event.currentTarget.classList.add("active-link");
+  e.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
 
@@ -30,7 +30,7 @@ const msg = document.getElementById("msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
+    .then(() => {
       msg.innerHTML = "Message sent successfully";
       setTimeout(function () {
         msg.innerHTML = "";
