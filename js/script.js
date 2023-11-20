@@ -23,7 +23,7 @@ function closemenu() {
 }
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycby-Nen-CgdEJk519cYkQfFbbH8Kwwt4BHWdUdy5q2Co98RkXpYPvNDbytqnfAFvYvL4/exec";
+  "https://docs.google.com/spreadsheets/d/18stENy2B36wUFQ2zLPEnFJxSdPYUjkzdiV-aiYL9IL8/post#gid=0";
 const form = document.forms["submit-to-google-sheet"];
 const msg = document.getElementById("msg");
 
